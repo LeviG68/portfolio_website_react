@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tetris from './Tetris';
 import MetalMedia from './MetalMedia';
 import FakeStore from './FakeStore';
+import CatchOfTheDay from './CatchOfTheDay';
 import { Grid } from '@material-ui/core';
 import Social from '../components/Social';
 
@@ -30,9 +31,14 @@ export default function Projects() {
                 <Grid item xs={4}>
                     <FakeStore/>
                 </Grid> 
+                <Grid item xs={4}>
+                    <CatchOfTheDay/>
+                </Grid> 
                 
             <div className="social">
-                <Social/>
+                <Grid item xl>
+                    <Social/>
+                </Grid>
             </div>
             </Grid>    
         </div> 
